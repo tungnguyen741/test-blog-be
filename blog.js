@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 
 // ===CONNECT DATABASE MONGODB===
+// MONGODB_URI : mongodb+srv://nodejs:minhtam1998@cluster0.hiexf.mongodb.net/Blog?retryWrites=true&w=majority
 mongoose.connect(process.env.MONGODB_URI, function (err) {
     if (err) 
       throw err;
