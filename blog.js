@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 // ===CONNECT DATABASE MONGODB===
 // MONGODB_URI : mongodb+srv://nodejs:minhtam1998@cluster0.hiexf.mongodb.net/Blog?retryWrites=true&w=majority
-mongoose.connect(process.env.MONGODB_URI, function (err) {
+mongoose.connect('mongodb+srv://nodejs:minhtam1998@cluster0.hiexf.mongodb.net/Blog?retryWrites=true&w=majority', function (err) {
     if (err) 
       throw err;
     console.log('Successfully connected');
