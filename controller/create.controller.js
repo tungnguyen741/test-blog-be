@@ -1,5 +1,5 @@
 const userModel = require('../models/user.model')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt-nodejs');
 
 module.exports.createUser = async function(req, res){
     req.body.password = await bcrypt.hash(req.body.password, 10)
