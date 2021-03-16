@@ -39,6 +39,9 @@ const LoginMiddleware = require('./middleware/login.middleware');
 app.use('/posts', RoutePost)
 app.use('/create', RouteCreate)
 app.use('/users', RouteLogin)
+app.use('/test',(req, res)=>{
+  return res.send('OKKKKKKKKk')
+})
 
 
 app.listen(port, function(){
